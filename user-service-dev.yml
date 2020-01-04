@@ -7,7 +7,10 @@ spring:
     name: user-service
   cloud:
     config:
-      override-none: true
+      override-none: true 
+    inetutils:
+      ignored-interfaces: VM.*
+      preferred-networks: 176.222.4
   rabbitmq:
     host: 192.168.64.140
     port: 5672
